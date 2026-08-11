@@ -8,6 +8,20 @@
 
 </div>
 
+## Getting Started
+
+[pCloudy](https://www.pcloudy.com/) is a cloud testing platform that gives you access to real browsers and devices directly from your automation scripts. This project is a simple Java Selenium example showing how to run browser automation on pCloudy's remote Selenium grid.
+
+
+
+
+## Prerequisites
+
+- Java 11 or later
+- Maven 3.8+ recommended
+- A valid pCloudy account
+- Access to the pCloudy Selenium endpoint
+
 ## Overview
 
 This repository contains a simple Selenium Java sample that runs a browser session on the pCloudy cloud Selenium grid.
@@ -20,6 +34,14 @@ The sample:
 - Searches for `Selenium`
 - Saves a screenshot under `target/screenshots`
 
+## Features
+
+- Remote WebDriver execution on pCloudy
+- Selenium 4 with Java 11
+- TestNG annotations for test lifecycle management
+- Automatic screenshot capture
+- Maven-based project setup
+
 ## Project Details
 
 - Language: Java
@@ -28,26 +50,31 @@ The sample:
 - Test framework: TestNG
 - Java version: `11`
 
-## Prerequisites
 
-- Java 11 or later
-- Maven 3.8+ recommended
-- A valid pCloudy account
-- Access to the pCloudy Selenium endpoint
 
 ## Project Structure
 
-```
+```text
 pc-selenium-java/
-├── pom.xml
-├── README.md
-└── src
-    └── main
-        └── java
-            └── com
-                └── pcloudy
-                    └── selenium
-                        └── PcloudySeleniumRunner.java
+|-- pom.xml
+|-- README.md
+`-- src
+    `-- main
+        `-- java
+            `-- com
+                `-- pcloudy
+                    `-- selenium
+                        `-- PcloudySeleniumRunner.java
+```
+
+## Setup
+
+Clone the repository and install dependencies:
+
+```bash
+git clone https://github.com/Pcloudy-Sample/PC-selenium-java
+cd PC-selenium-java
+mvn clean install
 ```
 
 ## Configuration
@@ -81,7 +108,7 @@ static Map<String, Object> buildOptions() {
 }
 ```
 
-## Run the Sample
+## Run The Sample
 
 Run the sample through Maven exec:
 
@@ -89,17 +116,7 @@ Run the sample through Maven exec:
 mvn exec:java -Dexec.mainClass=com.pcloudy.selenium.PcloudySeleniumRunner
 ```
 
-## Getting Started
-
-Clone the project and install dependencies:
-
-```bash
-git clone https://github.com/Pcloudy-Sample/PC-selenium-java
-cd PC-selenium-java
-mvn clean install
-```
-
-## What the Sample Does
+## What The Sample Does
 
 The `PcloudySeleniumRunner` class:
 
@@ -124,8 +141,6 @@ The `PcloudySeleniumRunner` class:
 - If Maven cannot resolve dependencies, make sure you have internet access and a working Maven installation.
 - If screenshots are not created, check that the test reached the `captureScreenshot` step and that the process has write access to `target/screenshots`.
 
-
-
 ## Dependencies
 
 The project uses these Maven dependencies:
@@ -133,8 +148,12 @@ The project uses these Maven dependencies:
 - `org.seleniumhq.selenium:selenium-java`
 - `org.testng:testng`
 
-
 ## Learn More
 
 - [pCloudy Website](https://www.pcloudy.com)
 - [Selenium Documentation](https://www.selenium.dev/documentation/)
+
+
+## Contributions
+
+Contributions are welcome. Please open an issue to discuss your idea before submitting a pull request.
