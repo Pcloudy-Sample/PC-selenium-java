@@ -1,8 +1,8 @@
 <div align="center">
 
-# Run Selenium Tests with Java on pCloudy
+# Run Selenium Tests with Java on Pcloudy
 
-[![pCloudy](https://img.shields.io/badge/Made%20by-pCloudy-1a73e8?style=for-the-badge)](https://www.pcloudy.com)
+[![Pcloudy](https://img.shields.io/badge/Made%20by-Pcloudy-1a73e8?style=for-the-badge)](https://www.pcloudy.com)
 [![Selenium](https://img.shields.io/badge/Selenium-Java-blue?style=for-the-badge)](https://www.selenium.dev/)
 [![Java](https://img.shields.io/badge/Java-11%2B-orange?style=for-the-badge)](https://www.java.com/)
 
@@ -10,7 +10,7 @@
 
 ## Getting Started
 
-[pCloudy](https://www.pcloudy.com/) is a cloud testing platform that gives you access to real browsers and devices directly from your automation scripts. This project is a simple Java Selenium example showing how to run browser automation on pCloudy's remote Selenium grid.
+[Pcloudy](https://www.pcloudy.com/) is a cloud testing platform that gives you access to real browsers and devices directly from your automation scripts. This project is a simple Java Selenium example showing how to run browser automation on Pcloudy's remote Selenium grid.
 
 
 
@@ -19,16 +19,16 @@
 
 - Java 11 or later
 - Maven 3.8+ recommended
-- A valid pCloudy account
-- Access to the pCloudy Selenium endpoint
+- A valid Pcloudy account
+- Access to the Pcloudy Selenium endpoint
 
 ## Overview
 
-This repository contains a simple Selenium Java sample that runs a browser session on the pCloudy cloud Selenium grid.
+This repository contains a simple Selenium Java sample that runs a browser session on the Pcloudy cloud Selenium grid.
 
 The sample:
 
-- Connects to the pCloudy remote Selenium hub
+- Connects to the Pcloudy remote Selenium hub
 - Launches a Chrome browser session
 - Opens Wikipedia
 - Searches for `Selenium`
@@ -36,7 +36,7 @@ The sample:
 
 ## Features
 
-- Remote WebDriver execution on pCloudy
+- Remote WebDriver execution on Pcloudy
 - Selenium 4 with Java 11
 - TestNG annotations for test lifecycle management
 - Automatic screenshot capture
@@ -81,9 +81,9 @@ mvn clean install
 
 Open `src/main/java/com/pcloudy/selenium/PcloudySeleniumRunner.java` and update the following values:
 
-- `HUB_URL` for the pCloudy Selenium hub
-- `USER_NAME` with your pCloudy email
-- `ACCESS_KEY` with your pCloudy access key
+- `HUB_URL` for the Pcloudy Selenium hub
+- `USER_NAME` with your Pcloudy email
+- `ACCESS_KEY` with your Pcloudy access key
 - The `buildOptions()` values for your desired OS, browser version, project name, and build name
 
 Example capability block:
@@ -129,7 +129,7 @@ The `PcloudySeleniumRunner` class:
 
 ## Important Notes
 
-- The project currently hardcodes the pCloudy username and access key in the runner. For real usage, move these values to environment variables or a secure secret store.
+- The project currently hardcodes the Pcloudy username and access key in the runner. For real usage, move these values to environment variables or a secure secret store.
 - `browserName` is set to `chrome` in the runner.
 - Screenshots are written to `target/screenshots/` and are not committed to source control.
 - The sample uses TestNG annotations, but the `main` method also allows it to run as a simple Java entry point.
@@ -137,7 +137,7 @@ The `PcloudySeleniumRunner` class:
 ## Troubleshooting
 
 - If the session does not start, verify the hub URL, username, and access key.
-- If the browser fails to launch, confirm the selected `os`, `osVersion`, and `browserVersion` are supported by your pCloudy plan.
+- If the browser fails to launch, confirm the selected `os`, `osVersion`, and `browserVersion` are supported by your Pcloudy plan.
 - If Maven cannot resolve dependencies, make sure you have internet access and a working Maven installation.
 - If screenshots are not created, check that the test reached the `captureScreenshot` step and that the process has write access to `target/screenshots`.
 
@@ -150,7 +150,7 @@ The project uses these Maven dependencies:
 
 ## Learn More
 
-- [pCloudy Website](https://www.pcloudy.com)
+- [Pcloudy Website](https://www.pcloudy.com)
 - [Selenium Documentation](https://www.selenium.dev/documentation/)
 
 
